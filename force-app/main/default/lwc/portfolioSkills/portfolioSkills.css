@@ -1,0 +1,12 @@
+h2{
+    background: #0A1172;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.slds-badge{
+    --slds-c-badge-color-background: #4bca81;
+    --slds-c-badge-color-text: #fff;
+}

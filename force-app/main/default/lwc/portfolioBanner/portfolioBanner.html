@@ -1,0 +1,41 @@
+<template>
+    <div class="banner">
+        <img src={userPic} class="profile-pic"/>
+        <div class="name">{fullName}</div>
+        <div class="designation">{designation} at {companyName}</div>
+        <div class="location">{companyLocation}</div>
+        <div>
+            <template if:true={linkedinUrl}>
+                <a href={linkedinUrl} target="_blank">
+                    <img src={linkedin} class="social-icon"/>
+                </a>
+            </template>
+            <template if:true={twitterUrl}>
+                <a href={twitterUrl} target="_blank">
+                    <img src={twitter} class="social-icon"/>
+                </a>
+            </template>
+            <template if:true={githubUrl}>
+                <a href={githubUrl} target="_blank">
+                    <img src={github} class="social-icon"/>
+                </a>
+            </template>
+            <template if:true={youtubeUrl}>
+                <a href={youtubeUrl} target="_blank">
+                    <img src={youtube} class="social-icon"/>
+                </a>
+            </template>
+            <template if:true={trailheadUrl}>
+                <a href={trailheadUrl} target="_blank">
+                    <img src={trailhead} class="social-icon"/>
+                </a>
+            </template>
+            <template if:true={blogUrl}>
+                <a href={blogUrl} target="_blank">
+                    <img src={blog} class="social-icon"/>
+                </a>
+            </template>
+        </div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,176C384,192,480,224,576,250.7C672,277,768,299,864,282.7C960,267,1056,213,1152,186.7C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </div>
+</template>
